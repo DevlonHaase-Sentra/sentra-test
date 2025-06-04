@@ -17,4 +17,5 @@ public class EmployeeService extends AbstractService<Employee> {
         }
         return Optional.empty();
     }
+    public Optional<Employee> findByEmail(String email) {return Optional.empty();}
 }
