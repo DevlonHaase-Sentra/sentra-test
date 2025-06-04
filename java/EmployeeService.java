@@ -9,10 +9,9 @@ public class EmployeeService extends AbstractService<Employee> {
         System.out.println("Employee created: " + employee);
     }
 
-    public Optional<Employee> findByName(String name) {
+    public Optional<Employee> findByName(String name,String email) {
         for (Employee employee : getAll()) {
             if (employee.getName().equalsIgnoreCase(name)) {
-                System.out.println("Employee created: " + employee);
                 return Optional.of(employee);
             }
         }
